@@ -1,3 +1,5 @@
+window.Game = window.Game || {};
+
 /*=================================================
   =======================CHAT======================*/
 
@@ -268,3 +270,4 @@ window.Game.momgreet = function () {
     add2[Math.floor(Math.random() * add2.length)]
   );
 }; 
+
