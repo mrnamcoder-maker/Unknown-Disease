@@ -4,7 +4,7 @@
 window.testRNG = function () {
   return "RNG JS Loaded";}
 
-window.Game.momtalk = function () {
+window.momtalk = function () {
   let game = window.Game;
   let npc = State.variables.NPC.mom;
   let line = "";
