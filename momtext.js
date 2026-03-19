@@ -1,11 +1,15 @@
 /*=================================================
   =======================CHAT======================*/
-console.log("MOMTEXT LOADED");
 
 window.testRNG = function () {
   return "RNG JS Loaded";}
 
+
 window.momtalk = function () {
+  if (!window.State || !State.variables.NPC || !State.variables.NPC.mom) {
+    console.warn("NPC not ready");
+    return "NPC not ready";}
+
   let game = window.Game;
   let npc = State.variables.NPC.mom;
   let line = "";
