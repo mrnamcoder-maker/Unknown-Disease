@@ -168,6 +168,21 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	border-radius: 10px ;}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">window.Game = {};
 
+(function () {
+    var script = document.createElement('script');
+    script.src = "https://cdn.jsdelivr.net/gh/mrnamcoder-maker/Unknown-Disease@main/momtext.js";
+
+    script.onload = function () {
+        console.log("momtext loaded");
+    };
+
+    script.onerror = function () {
+        console.error("FAILED to load momtext");
+    };
+
+    document.head.appendChild(script);
+})();
+
 /*=================================================
  =======================GAME=====================*/
 
