@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html data-init="no-js">
 <head>
-<script src="https://cdn.jsdelivr.net/gh/mrnamcoder-maker/Unknown-Disease@main/momtext.js"></script>
 <meta charset="UTF-8" />
 <title>Unknown_Disease</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -1475,7 +1474,7 @@ window.Game.test1 = function(act){
 
 &lt;&lt;link &quot;Back&quot;&gt;&gt;&lt;&lt;run Game.goback(1)&gt;&gt;&lt;&lt;/link&gt;&gt; 
 </tw-passagedata><tw-passagedata pid="14" name="mom" tags="" position="100,100" size="100,100">&lt;h1&gt; &lt;&lt;print $NPC.mom.name&gt;&gt; &lt;/h1&gt;
-&lt;&lt;run window.momtalk()&gt;&gt;
+
     &lt;&lt;if $NPC.mom.route !== &quot;c&quot;&gt;&gt;
         &lt;&lt;link &quot;Talk&quot;&gt;&gt;&lt;&lt;run Game.timepass(0,0,15)&gt;&gt;&lt;&lt;run window.Game.stat(&quot;mom&quot;,&quot;l&quot;,1)&gt;&gt;&lt;&lt;goto &quot;mom l talk&quot;&gt;&gt;&lt;&lt;/link&gt;&gt; 
     &lt;&lt;/if&gt;&gt;    
@@ -2057,11 +2056,8 @@ window.Game.test1 = function(act){
   
   
 </tw-passagedata><tw-passagedata pid="34" name="Intro 0" tags="" position="1000,0" size="100,100">&lt;h1&gt; Intro &lt;/h1&gt;
-&lt;&lt;if window.jsReady&gt;&gt;
-    &lt;&lt;print testRNG()&gt;&gt;
-&lt;&lt;else&gt;&gt;
-    loading js...
-&lt;&lt;/if&gt;&gt;
+
+&lt;&lt;print window.momtalk()&gt;&gt;
 &lt;div class=&quot;info&quot;&gt; &lt;p&gt; &lt;strong&gt;
 
 Thank you for playing!. 
