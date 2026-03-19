@@ -1,5 +1,6 @@
 /*=================================================
   =======================CHAT======================*/
+console.log("MOMTEXT LOADED");
 
 window.testRNG = function () {
   return "RNG JS Loaded";}
