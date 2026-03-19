@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-init="no-js">
 <head>
-<script src="https://cdn.jsdelivr.net/gh/mrnamcoder-maker/Unknown-Disease@main/momtext.js"></script>	
+<script src="https://cdn.jsdelivr.net/gh/mrnamcoder-maker/Unknown-Disease@main/momtext.js"></script>
 <meta charset="UTF-8" />
 <title>Unknown_Disease</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -169,20 +169,6 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 	border-radius: 10px ;}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">window.Game = {};
 
-(function () {
-    var script = document.createElement('script');
-    script.src = "https://cdn.jsdelivr.net/gh/mrnamcoder-maker/Unknown-Disease@main/momtext.js";
-
-    script.onload = function () {
-        console.log("momtext loaded");
-    };
-
-    script.onerror = function () {
-        console.error("FAILED to load momtext");
-    };
-
-    document.head.appendChild(script);
-})();
 
 /*=================================================
  =======================GAME=====================*/
@@ -2055,7 +2041,12 @@ window.Game.test1 = function(act){
   
 </tw-passagedata><tw-passagedata pid="34" name="Intro 0" tags="" position="1000,0" size="100,100">&lt;h1&gt; Intro &lt;/h1&gt;
 
-&lt;&lt;print window.momtalk()&gt;&gt;
+&lt;&lt;if window.momtalk&gt;&gt;
+    &lt;&lt;= window.momtalk()&gt;&gt;
+&lt;&lt;else&gt;&gt;
+    Loading...
+&lt;&lt;/if&gt;&gt;
+
 &lt;div class=&quot;info&quot;&gt; &lt;p&gt; &lt;strong&gt;
 
 Thank you for playing!. 
